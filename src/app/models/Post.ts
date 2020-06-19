@@ -7,7 +7,7 @@ interface IPost extends Document {
 }
 
 const PostSchema = new Schema({
-  titletitle: {
+  title: {
     type: String,
     required: true,
     trim: true
