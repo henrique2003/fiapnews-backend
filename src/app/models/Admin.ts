@@ -7,16 +7,10 @@ interface IUser extends Document {
 }
 
 const UserSchema = new Schema({
-  name: {
-    type: String,
-    required: true,
-    trim: true
-  },
+  name: String,
   password: {
     type: String,
-    required: true,
-    trim: true,
-    select: true
+    select: false
   }
 })
 

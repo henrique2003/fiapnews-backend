@@ -37,7 +37,7 @@ class App {
         this.express.use(helmet_1.default());
     }
     routes() {
-        this.express.use(routes_1.default);
+        this.express.use('/api', routes_1.default);
     }
 }
 exports.default = new App().express;
